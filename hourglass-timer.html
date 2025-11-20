@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Support – Hourglass Timer App</title>
+
+    <style>
+
+        body {
+
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+            line-height: 1.6;
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            padding: 20px;
+
+            color: #333;
+
+        }
+
+        h1, h2 {
+
+            color: #2c3e50;
+
+            border-bottom: 2px solid #3498db;
+
+            padding-bottom: 10px;
+
+        }
+
+        .language-toggle {
+
+            text-align: center;
+
+            margin: 20px 0;
+
+        }
+
+        .language-toggle button {
+
+            background: #3498db;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            margin: 0 10px;
+
+            border-radius: 5px;
+
+            cursor: pointer;
+
+        }
+
+        .language-toggle button:hover {
+
+            background: #2980b9;
+
+        }
+
+        .content {
+
+            background: #f8f9fa;
+
+            padding: 20px;
+
+            border-radius: 10px;
+
+            margin: 20px 0;
+
+        }
+
+        .german { display: block; }
+
+        .english { display: none; }
+
+        .last-updated {
+
+            font-style: italic;
+
+            color: #7f8c8d;
+
+            text-align: center;
+
+            margin: 20px 0;
+
+        }
+
+        a {
+
+            color: #3498db;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Support / Hilfe – Hourglass Timer App</h1>
+
+    
+
+    <div class="language-toggle">
+
+        <button onclick="showLanguage('german')">Deutsch</button>
+
+        <button onclick="showLanguage('english')">English</button>
+
+    </div>
+
+
+
+    <div class="last-updated">
+
+        <span class="german">Stand: 09. Juli 2025</span>
+
+        <span class="english">Last Updated: July 09, 2025</span>
+
+    </div>
+
+
+
+    <div class="content german">
+
+        <h2>Support & Kontakt</h2>
+
+        <p>Du hast Fragen, Feedback oder ein Problem mit der App „Hourglass Timer"?</p>
+
+        <ul>
+
+            <li>Schreibe eine E-Mail an: <a href="mailto:info@develohp.de">info@develohp.de</a></li>
+
+        </ul>
+
+        <p>Weitere Informationen zum Datenschutz findest du in der Datenschutzerklärung: <a href="https://develohp.de/hourglass-timer-privacy.html">Hourglass Timer</a><!-- , <a href="https://develohp.de/hourglass-timer-privacy-adfree.html">Hourglass Timer Ad Free</a> -->.</p>
+
+    </div>
+
+
+
+    <div class="content english">
+
+        <h2>Support & Contact</h2>
+
+        <p>Do you have questions, feedback, or an issue with the "Hourglass Timer" app?</p>
+
+        <ul>
+
+            <li>Email: <a href="mailto:info@develohp.de">info@develohp.de</a></li>
+
+        </ul>
+
+        <p>For more information about privacy, see the Privacy Policy: <a href="https://develohp.de/hourglass-timer-privacy.html">Hourglass Timer</a><!-- , <a href="https://develohp.de/hourglass-timer-privacy-adfree.html">Hourglass Timer Ad Free</a> -->.</p>
+
+    </div>
+
+
+
+    <script>
+
+        function showLanguage(lang) {
+
+            if (lang === 'german') {
+
+                document.querySelectorAll('.german').forEach(el => el.style.display = 'block');
+
+                document.querySelectorAll('.english').forEach(el => el.style.display = 'none');
+
+            } else {
+
+                document.querySelectorAll('.german').forEach(el => el.style.display = 'none');
+
+                document.querySelectorAll('.english').forEach(el => el.style.display = 'block');
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+
